@@ -23,8 +23,7 @@ arduino-cli  Version: 1.4.1 Commit: e39419312
 
 ## 2. Create Your Sketch Folder
 
-1. Create a folder for your project.
-   Example:
+1. Create a folder for your project. Example:
 
 ```text
 C:\Users\Elisee\Documents\ego\LED
@@ -96,29 +95,31 @@ Global variables use 22060 bytes (6%) of dynamic memory.
 arduino-cli upload -p COM3 --fqbn esp32:esp32:esp32 C:\Users\Elisee\Documents\ego\LED
 ```
 
-* Replace `COM3` with the port your ESP32 is connected to (`arduino-cli board list` can help).
-* Use `--verify` to compile without uploading if you just want to check the code.
+- Replace `COM3` with the port your ESP32 is connected to (`arduino-cli board list` can help).
+- Use `--verify` to compile without uploading if you just want to check the code.
 
 ---
 
 ## 7. Shortcut Tips
 
-* You can **compile in the current folder** without typing full path:
+- You can **compile in the current folder** without typing full path:
 
 ```bash
 cd C:\Users\Elisee\Documents\ego\LED
 arduino-cli compile --fqbn esp32:esp32:esp32 .
 ```
 
-* Always keep folder and main `.ino` filename identical.
+- Always keep folder and main `.ino` filename identical.
 
 ---
 
 **Brrrrr mode summary**:
 
-* Install Arduino CLI ✅
-* Make folder + same-named `.ino` ✅
-* Install ESP32 core ✅
-* Install libs if needed ✅
-* Compile: `arduino-cli compile --fqbn esp32:esp32:esp32 .` ✅
-* Upload with COM port ✅
+| Step | Task |
+|------|------|
+| ✅ | Install Arduino CLI |
+| ✅ | Make folder + same-named `.ino` |
+| ✅ | Install ESP32 core |
+| ✅ | Install libs if needed |
+| ✅ | Compile: `arduino-cli compile --fqbn esp32:esp32:esp32 .` |
+| ✅ | Upload with COM port |
